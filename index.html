@@ -1,1 +1,180 @@
-<h1>My Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fares Blibeche — Research Portfolio</title>
+    <meta
+      name="description"
+      content="Editorial-style personal website template for internships and workshops."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300..800&family=Source+Sans+3:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <a href="#top" class="brand">
+          <img src="images/logo.png" alt="Fares Blibeche" class="brand-logo" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#work">Projects</a>
+          <a href="#cv">CV</a>
+          <a href="#links">Links</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="top">
+          <div class="hero-copy">
+            <h1>Fares Blibeche</h1>
+
+            <p class="intro">
+              I am an undergraduate data science student interested in Arabic NLP,
+              OCR/HTR, manuscript analysis, and computational approaches to language.
+            </p>
+
+            <p class="subcopy">
+              This website is conceived as an editorial space: a quiet point of
+              entry to my work, projects, reading interests, and applications for
+              workshops, internships, and research opportunities.
+            </p>
+
+            <div class="actions">
+              <a class="button primary" href="#cv">Read CV</a>
+              <a class="button secondary" href="#links">Open Links</a>
+            </div>
+          </div>
+
+          <aside class="hero-media">
+            <div class="image-block">
+              <!-- OPTION A: use your own image -->
+              <!-- <img src="your-image.jpg" alt="Portrait or editorial image" /> -->
+
+              <!-- OPTION B: keep placeholder until later -->
+              <div class="image-placeholder">portrait / archival image / document</div>
+            </div>
+
+            <div class="caption">
+              Replace this block with a portrait, a document image, a manuscript detail,
+              or a carefully chosen editorial photograph.
+            </div>
+          </aside>
+        </section>
+
+        <section class="grid" id="about">
+          <article class="card">
+            <h2>About</h2>
+            <p>
+              Use this section for a short but clear presentation: your academic
+              background, the topics you work on, and the kinds of opportunities you
+              are currently seeking.
+            </p>
+            <p>
+              Keep the tone direct, calm, and readable. This site should feel closer
+              to a research page or journal profile than a conventional portfolio.
+            </p>
+          </article>
+
+          <article class="card" id="cv">
+            <h2>Current focus</h2>
+            <ul class="list">
+              <li>Arabic NLP and language technologies</li>
+              <li>OCR / HTR and text recognition workflows</li>
+              <li>Manuscripts, archives, and document analysis</li>
+              <li>Research internships and workshop applications</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="works" id="work">
+          <div class="section-heading">
+            <h2>Selected work</h2>
+            <div class="section-note">A few projects, not an exhaustive archive</div>
+          </div>
+
+          <div class="work-list">
+            <article class="work-item">
+              <div class="work-label">Project 01</div>
+              <div class="work-content">
+                <h3>Title of project or study</h3>
+                <p>
+                  Write two or three lines here: what the project is, what methods it
+                  uses, what problem it addresses, and why it matters.
+                </p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="work-label">Project 02</div>
+              <div class="work-content">
+                <h3>Title of project or paper-related work</h3>
+                <p>
+                  Keep this concise. The goal is not to flood the page, but to give a
+                  reader a fast sense of your interests and seriousness.
+                </p>
+              </div>
+            </article>
+
+            <article class="work-item">
+              <div class="work-label">Project 03</div>
+              <div class="work-content">
+                <h3>Title of workshop, volunteer activity, or association</h3>
+                <p>
+                  You can also use this area for associative experiences, publications,
+                  writing samples, or collaborations if they strengthen your profile.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="links" id="links">
+          <div class="section-heading">
+            <h2>Links</h2>
+            <div class="section-note">Direct access to platforms and documents</div>
+          </div>
+
+          <div class="link-row">
+            <a class="link-tile" href="#">
+              <span class="link-title">GitHub</span>
+              <span class="link-meta">Code, repositories, experiments</span>
+            </a>
+
+            <a class="link-tile" href="#">
+              <span class="link-title">Hugging Face</span>
+              <span class="link-meta">Models, demos, datasets</span>
+            </a>
+
+            <a class="link-tile" href="#">
+              <span class="link-title">LinkedIn</span>
+              <span class="link-meta">Academic and professional profile</span>
+            </a>
+
+            <a class="link-tile" href="#">
+              <span class="link-title">CV PDF</span>
+              <span class="link-meta">Downloadable document</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Designed as a simple editable template</span>
+        <span id="year"></span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
