@@ -1,3 +1,57 @@
+/* ===== GLOBAL ===== */
+
+.intro {
+  margin: 24px 0 0;
+  max-width: 68ch;
+  font-size: clamp(1.12rem, 1.45vw, 1.35rem);
+  line-height: 1.72;
+}
+
+.subcopy {
+  margin: 18px 0 0;
+  max-width: 72ch;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ===== COMMING SOON PAGE ===== */
+
+.maintenance-page .maintenance-main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maintenance-page .maintenance-block {
+  max-width: 760px;
+  text-align: center;
+}
+
+.maintenance-page h1 {
+  margin: 0;
+  font-family: "Garamond Pro Bold", serif;
+  font-style: italic;
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  line-height: 0.95;
+}
+
+.maintenance-page .maintenance-text {
+  margin: 24px auto 0;
+  max-width: 36ch;
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.maintenance-page .button {
+  margin-top: 28px;
+}
+
+/* ===== HOME PAGE ===== */
+
 .home-page h1 {
   margin: 0;
   font-family: "Garamond Pro Bold", serif;
@@ -16,22 +70,6 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-}
-
-.home-page .intro {
-  margin: 24px 0 0;
-  max-width: 68ch;
-  font-size: clamp(1.12rem, 1.45vw, 1.35rem);
-  line-height: 1.72;
-}
-
-.home-page .subcopy {
-  margin: 18px 0 0;
-  max-width: 72ch;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--muted);
-  font-style: italic;
 }
 
 .home-page .actions {
@@ -98,6 +136,18 @@
   }
 }
 
+/* ===== CV PAGE ===== */
+
+.cv-page h1 {
+  margin: 0;
+  font-family: "Garamond Pro Bold", serif;
+  font-style:italic;
+  font-size: clamp(3.2rem, 5vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
 .cv-page .cv-hero {
   grid-template-columns: minmax(420px, 1.15fr) minmax(260px, 0.85fr);
 }
@@ -156,7 +206,8 @@
 
 .cv-page .cv-content h3 {
   margin: 0 0 8px;
-  font-family: "Garamond Pro", serif;
+  font-family: "Garamond Pro Semibold", serif;
+  font-style: normal;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.05;
@@ -169,6 +220,7 @@
 
 .cv-page .cv-meta {
   color: var(--muted);
+  font-style: italic;
 }
 
 .cv-page .cv-note {
@@ -190,4 +242,32 @@
   .cv-page .cv-hero {
     grid-template-columns: 1fr;
   }
+}
+
+.cv-page .card-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.cv-page .card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cv-page .card-title {
+  margin: 0;
+  font-family: "Garamond Pro", serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cv-page .section-heading h2 {
+  font-family: "Garamond Pro Bold", serif;
+  font-style: italic;
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 400;
+  line-height: 1;
 }
